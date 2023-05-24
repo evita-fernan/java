@@ -7,27 +7,33 @@ public class Exercise11 {
 
         System.out.println("Ingrese una palabra finalizada con .");
         String word = read.nextLine();
+
+        String wordCodified = codifyWord(word);
+        System.out.println(wordCodified);
     }
 
-    public static String codify (String word) {
+    public static String codifyWord (String word) {
         int len = word.length();
+        String letterCodified = "";
+
         for (int i = 0; i < len; i++) {
             char letter = word.charAt(i);
-            switch (letter) {
+            String codify = String.valueOf(letter);
+            switch (Character.toLowerCase(letter)) {
                 case 'a':
-                    return "@";
+                    codify = "@";
                 case 'e':
-                    return "#";
+                    codify = "#";
                 case 'i':
-                    return "$";
+                    codify = "$";
                 case 'o':
-                    return "%";
+                    codify = "%";
                 case 'u':
-                    return "*";
-                default:
-                    return "q";
+                    codify = "*";
             }
+            letterCodified = letterCodified.concat(codify);
         }
-        return "a";
+
+        return letterCodified;
     }
 }
