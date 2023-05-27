@@ -7,6 +7,10 @@ public class Exercise9 {
         String word = read.nextLine();
         String first = word.substring(0).toLowerCase();
 
-   
+        if (first == "a"){
+            System.out.println("La primera letra es una A, CORRECTO");
+        } else {
+            System.out.println("La primera letra no es una A, INCORRECTO");
+        }
     }
 }
