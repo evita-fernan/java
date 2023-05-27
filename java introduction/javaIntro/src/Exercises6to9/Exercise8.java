@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Exercise8 {
     public static void main(String[] args) {
-        
+        Scanner read = new Scanner(System.in);
+        System.out.println("Ingrese una palabra o frase");
     }
 }
