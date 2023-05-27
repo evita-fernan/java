@@ -10,6 +10,8 @@ public class Exercise8 {
 
         if(qty == 8){
             System.out.println("La cantidad de letras ingresadas es correcta (8)");
+        } else {
+            System.out.println("La cantidad de letras ingresadads no es correcta (es  menor o mayor a 8)");
         }
     }
 }
