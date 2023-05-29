@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class Exercise11 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-
+        int option;
 
         System.out.println("Ingrese un numero");
         int num1 = read.nextInt();
         System.out.println("Ingrese otro numero");
         int num2 = read.nextInt();
 
+        do {
         System.out.println("Seleccione una opción:\n1. Sumar \n2. Restar \n3. Multiplicar \n4. Dividir \n5. Salir \n Elija un numero:");
-        int option = read.nextInt();
+        option = read.nextInt();
 
         switch (option) {
             case 1:
@@ -29,6 +30,7 @@ public class Exercise11 {
             default:
                 System.out.println("Ingrese una de las opciones ofrecidas");
         }
+        } while (option != 5);
     }
 
     public static int sumar(int num1, int num2) {
