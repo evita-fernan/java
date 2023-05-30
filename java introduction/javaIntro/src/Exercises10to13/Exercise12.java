@@ -20,9 +20,7 @@ public class Exercise12 {
             }
 
             String first = caracter.substring(0,1).toUpperCase();
-            System.out.println("SOY FIRST " + first);
             String last = caracter.substring(qty -1).toUpperCase();
-            System.out.println("SOY LAST " + last);
 
         for (int i = 0; i < qty; i++) {
            if ((i == 0) && (first.equals("X"))){
@@ -36,10 +34,13 @@ public class Exercise12 {
                counterIncorrect++;
            }
         }
+        if (caracter.equals(special)){
+            System.out.println("Programa finalizado por el usuario");
+        } else {
             System.out.println("Cantidad de respuestas correctas: " + counterCorrect);
             System.out.println("Cantidad de respuestas incorrectas: " + counterIncorrect);
             System.out.println(!caracter.equals(special));
-        }
+        }}
         while (!caracter.equals(special));
 
     }
