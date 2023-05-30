@@ -29,8 +29,7 @@ public class Exercise12 {
            else if((i == (qty-1)) && (last.equals("O"))){
 
                counterCorrect++;
-           }
-           else {
+           } else if( (i == 0) && (!first.equals("X")) || ((i == (qty-1)) && (!last.equals("O")))){
                counterIncorrect++;
            }
         }
@@ -39,7 +38,6 @@ public class Exercise12 {
         } else {
             System.out.println("Cantidad de respuestas correctas: " + counterCorrect);
             System.out.println("Cantidad de respuestas incorrectas: " + counterIncorrect);
-            System.out.println(!caracter.equals(special));
         }}
         while (!caracter.equals(special));
 
