@@ -15,15 +15,30 @@ public class Exercise12 {
             int counterCorrect = 0;
             int counterIncorrect = 0;
 
-            if (qty > 5) {
+            if(qty > 5){
                 System.out.println("Se supero la cantidad maxima de caracteres permitidos. Reinicie el programa");
             }
 
-            String first = caracter.substring(0, 1).toUpperCase();
+            String first = caracter.substring(0,1).toUpperCase();
             System.out.println("SOY FIRST " + first);
-            String last = caracter.substring(qty - 1).toUpperCase();
+            String last = caracter.substring(qty -1).toUpperCase();
             System.out.println("SOY LAST " + last);
 
+        for (int i = 0; i < qty; i++) {
+           if ((i == 0) && (first.equals("X"))){
+               counterCorrect++;
+           }
+           else if((i == (qty-1)) && (last.equals("O"))){
+
+               counterCorrect++;
+           }
+           else {
+               counterIncorrect++;
+           }
+        }
+            System.out.println("Cantidad de respuestas correctas: " + counterCorrect);
+            System.out.println("Cantidad de respuestas incorrectas: " + counterIncorrect);
+            System.out.println(!caracter.equals(special));
         }
         while (!caracter.equals(special));
 
