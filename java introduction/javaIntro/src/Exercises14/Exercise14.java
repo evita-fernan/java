@@ -45,6 +45,5 @@ public class Exercise14 {
             result = euros * 0.86;
             System.out.println("La cantidad de " + euros + " € son " + result + " libras");
         }
-
     }
 }
