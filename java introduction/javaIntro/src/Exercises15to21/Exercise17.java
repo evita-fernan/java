@@ -23,16 +23,34 @@ public class Exercise17 {
     }
 
     public static void countDigits(int n, int[] vector) {
-        int counter = 0;
-        for (int i=0; i<n; i++){
-            if(vector[i] <= 10){
-                counter++;
+        int counter1 = 0;
+        int counter2 = 0;
+        int counter3 = 0;
+        int counter4 = 0;
+        int counter5 = 0;
+
+        for (int i = 0; i < n; i++){
+            if(vector[i] < 20){
+                counter1++;
             }
-            System.out.println("La cantidad de numeros con digito 1 son " + counter);
-            if((vector[i]> 10) && (vector[i]<=20)){
-                counter++;
+            else if((vector[i] >= 20) && (vector[i] < 30)){
+                counter2++;
             }
-            System.out.println("La cantidad de numeros con digito 1 son " + counter);
+            else if((vector[i] >= 30) && (vector[i] < 40)){
+                counter3++;
+            }
+            else if((vector[i] >= 40) && (vector[i] < 50)){
+                counter4++;
+            }
+            else if((vector[i] >= 50) && (vector[i] < 60)){
+                counter5++;
+            }
         }
+        System.out.println("La cantidad de numeros con digitos 1 son " + counter1);
+        System.out.println("La cantidad de numeros con digitos 2 son " + counter2);
+        System.out.println("La cantidad de numeros con digitos 3 son " + counter3);
+        System.out.println("La cantidad de numeros con digitos 4 son " + counter4);
+        System.out.println("La cantidad de numeros con digitos 5 son " + counter5);
+
     }
 }
