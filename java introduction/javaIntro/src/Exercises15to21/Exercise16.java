@@ -18,10 +18,10 @@ public class Exercise16 {
         System.out.println("Escoja un numero");
         int num = read.nextInt();
 
-        fullVector(n, vector);
-        searchNumber(vector, num);
+        completeVector(n, vector);
+        lookUpNumber(n, vector, num);
     }
-    public static void fullVector(int n, int [] vector){
+    public static void completeVector(int n, int [] vector){
         int min = 0;
         int max = 10;
         for (int i = 0; i < n; i++) {
@@ -32,7 +32,18 @@ public class Exercise16 {
         System.out.println("Vector de tamanio " + n + " completado con valores aleatorios entre "  + min + " y " + max);
     }
 
-    public static void searchNumber(int[] vector, int num){
-        
+    public static void lookUpNumber(int n, int[] vector, int num){
+        int counter = 0;
+        int position = 0;
+        for (int i = 0; i < n; i++) {
+            if(vector[i] == num){
+                counter++;
+                position = i;
+                System.out.println("El numero escogido se encuentra en la posicion " + i + " del vector");
+            }
+        }
+        if(counter != 0){
+            System.out.println("El numero escogido se encuentra repetido " + counter + " veces dentro del vector");
+        }
     }
 }
