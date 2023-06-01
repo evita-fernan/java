@@ -6,6 +6,6 @@ public class Exercise17 {
         System.out.println("Ingrese un numero entero positivo para dimensionar un vector");
         int n = read.nextInt();
         int [] vector = new int[n];
-        
+
     }
 }

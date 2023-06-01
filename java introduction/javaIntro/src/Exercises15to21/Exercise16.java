@@ -1,13 +1,6 @@
 package Exercises15to21;
 import java.util.Scanner;
 import java.lang.Math;
-/*
-Realizar un algoritmo que rellene un vector de tamaño N con valores aleatorios y le pida
-al usuario un numero a buscar en el vector. El programa mostrará donde se encuentra el
-numero y si se encuentra repetido
- */
-
-
 public class Exercise16 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
