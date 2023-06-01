@@ -29,9 +29,10 @@ public class Exercise17 {
                 counter++;
             }
             System.out.println("La cantidad de numeros con digito 1 son " + counter);
-            if(vector[i]> 10){
-
+            if((vector[i]> 10) && (vector[i]<=20)){
+                counter++;
             }
+            System.out.println("La cantidad de numeros con digito 1 son " + counter);
         }
     }
 }
