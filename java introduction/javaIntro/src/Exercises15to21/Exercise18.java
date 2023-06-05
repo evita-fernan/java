@@ -12,7 +12,7 @@ public class Exercise18 {
         System.out.println("La matriz transpuesta es: ");
         printMatrix(n, transpMatrix);
     }
-    
+
     //funcion que completa un matriz con numeros aleatorios
     public static int[][] completeRandomMatrix(int n, int[][] matrix) {
         int min = 0;
