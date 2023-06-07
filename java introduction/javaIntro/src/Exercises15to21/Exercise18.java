@@ -40,7 +40,6 @@ public class Exercise18 {
     public static void printMatrix(int n, int [][] matrix){
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                //In the following formula we create a program that generates random numbers between a minimum and a maximum value
                 if (i == 0 && j == 0) {
                     System.out.print("[ " + matrix[i][j]);
                 } else if ((i == (n - 1)) && (j == (n - 1))) {
@@ -52,5 +51,4 @@ public class Exercise18 {
             System.out.println("");
         }
     }
-
 }
