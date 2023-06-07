@@ -51,6 +51,18 @@ public class Exercise19 {
         return transpMatrix;
     }
     public static void antiSymmetric(int n, int[][] matrix, int [][] transpMatrix){
-
+        int counter = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (transpMatrix[i][j] == matrix[i][j] * -1) {
+                    counter++;
+                } else if (transpMatrix[i][j] == 0 && matrix[i][j] == 0) {
+                    counter++;
+                }
+            }
+        }
+        if(counter == (n*n)){
+            System.out.println("La matriz es anti simetrica");
+        }
     }
 }
