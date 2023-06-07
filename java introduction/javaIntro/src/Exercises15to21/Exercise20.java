@@ -45,9 +45,15 @@ public class Exercise20 {
     }
 
     public static void magicMatrix (int n, int [][] matrix){
+        int sumRow = 0;
+        int sumCol = 0;
+        int sumDiag = 0;
+        int sumAntiDiag = 0;
+        int counter = 0;
+        boolean isMagic = true;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                
+
             }
         }
 
