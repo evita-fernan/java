@@ -45,17 +45,39 @@ public class Exercise20 {
     }
 
     public static void magicMatrix (int n, int [][] matrix){
-        int sumRow = 0;
-        int sumCol = 0;
-        int sumDiag = 0;
-        int sumAntiDiag = 0;
+        int addRow = 0;
+        int addCol = 0;
+        int addDiag = 0;
+        int addAntiDiag = 0;
         int counter = 0;
         boolean isMagic = true;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-
+        for (int i = 0; i < matrix.length && isMagic != false; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                addRow+= matrix[i][j];
+                addCol += matrix[j][i];
+                if(i == j) {
+                    addDiag += matrix[i][j];
+                    addAntiDiag += matrix[i][n-1-i];
+                }
+            }
+            if(addRow == addCol){
+                counter++;
+                if(counter == n){
+                isMagic = true;
+                }
+                addRow = 0;
+                addCol = 0;
+            } else {
+                isMagic = false;
             }
         }
-
+        if(isMagic == true && (addDiag != addAntiDiag)){
+            isMagic = false;
+        }
+        if(isMagic){
+            System.out.println("La matriz es magica");
+        } else {
+            System.out.println("La matriz NO es magica");
+        }
     }
 }
