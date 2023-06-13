@@ -2,14 +2,14 @@ package mascotaapp.entidades;
 
 public class Mascota {
     //atributos
-    public String nombre;
-    public String apodo;
+    private String nombre;
+    private String apodo;
     //perro, conejo, gato, entre otros.
-    public String tipo;
-    public String color;
-    public int edad;
-    public boolean cola;
-    public String raza;
+    private String tipo;
+    private String color;
+    private int edad;
+    private boolean cola;
+    private String raza;
 
     //constructor
     public Mascota(){
@@ -30,5 +30,9 @@ public class Mascota {
         this.edad = edad;
         this.cola = cola;
         this.raza = raza;
+    }
+
+    public void setNombre(String no){
+
     }
 }
