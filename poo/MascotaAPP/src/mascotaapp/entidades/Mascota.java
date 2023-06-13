@@ -10,16 +10,18 @@ public class Mascota {
     private int edad;
     private boolean cola;
     private String raza;
+    private int energia;
 
-    //constructor
+    //constructor sin argumentos
     public Mascota(){
-
+        this.energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String tipo){
         this.nombre = nombre;
         this.apodo = apodo;
         this.tipo = tipo;
+        this.energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String tipo, String color, int edad, boolean cola, String raza) {
@@ -30,6 +32,7 @@ public class Mascota {
         this.edad = edad;
         this.cola = cola;
         this.raza = raza;
+        this.energia = 1000;
     }
 
     public void setNombre(String nombre){
@@ -88,6 +91,13 @@ public class Mascota {
 
     public String getRaza() {
         return raza;
+    }
+
+    public int pasear(int energiaRestar){
+
+        energia -=  energiaRestar;
+
+        return energia;
     }
 
     @Override
