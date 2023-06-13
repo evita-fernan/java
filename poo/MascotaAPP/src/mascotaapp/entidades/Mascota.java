@@ -13,11 +13,11 @@ public class Mascota {
     private int energia;
 
     //constructor sin argumentos
-    public Mascota(){
+    public Mascota() {
         this.energia = 1000;
     }
 
-    public Mascota(String nombre, String apodo, String tipo){
+    public Mascota(String nombre, String apodo, String tipo) {
         this.nombre = nombre;
         this.apodo = apodo;
         this.tipo = tipo;
@@ -35,8 +35,8 @@ public class Mascota {
         this.energia = 1000;
     }
 
-    public void setNombre(String nombre){
-        if(nombre.length() > 0){
+    public void setNombre(String nombre) {
+        if (nombre.length() > 0) {
             this.nombre = nombre;
         }
     }
@@ -65,7 +65,7 @@ public class Mascota {
         this.raza = raza;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -93,10 +93,18 @@ public class Mascota {
         return raza;
     }
 
-    public int pasear(int energiaRestar){
+    public int pasear(int energiaRestar) {
 
-        energia -=  energiaRestar;
+        energia -= energiaRestar;
 
+        return energia;
+    }
+
+    //sobrecarga
+    public int pasear(int energiaRestar, int vueltas){
+        for (int i = 0; i < vueltas; i++){
+            energia-=energiaRestar;
+        }
         return energia;
     }
 
@@ -110,6 +118,7 @@ public class Mascota {
                 ", edad=" + edad +
                 ", cola=" + cola +
                 ", raza='" + raza + '\'' +
+                ", energia=" + energia +
                 '}';
     }
 }

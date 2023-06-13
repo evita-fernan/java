@@ -11,6 +11,7 @@ public class MascotaAPP {
 
         Mascota m1 = new Mascota("Yoga", read.next(), "Perro");
         m1.setNombre("Yoyo");
-        System.out.println(m1);
+        m1.pasear(100,4);
+        System.out.println(m1.toString());
     }
 }
