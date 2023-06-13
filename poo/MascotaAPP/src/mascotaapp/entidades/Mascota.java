@@ -89,4 +89,17 @@ public class Mascota {
     public String getRaza() {
         return raza;
     }
+
+    @Override
+    public String toString() {
+        return "Mascota{" +
+                "nombre='" + nombre + '\'' +
+                ", apodo='" + apodo + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", color='" + color + '\'' +
+                ", edad=" + edad +
+                ", cola=" + cola +
+                ", raza='" + raza + '\'' +
+                '}';
+    }
 }
