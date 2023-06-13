@@ -10,8 +10,7 @@ public class MascotaAPP {
         Scanner read = new Scanner(System.in);
 
         Mascota m1 = new Mascota("Yoga", read.next(), "Perro");
-
-        //m1. = "Yoyo bebe";
-
+        m1.setNombre("Yoga");
+        System.out.println(m1);
     }
 }

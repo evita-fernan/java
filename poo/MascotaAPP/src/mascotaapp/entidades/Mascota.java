@@ -32,7 +32,9 @@ public class Mascota {
         this.raza = raza;
     }
 
-    public void setNombre(String no){
-
+    public void setNombre(String nombre){
+        if(nombre.length() > 0){
+            this.nombre = nombre;
+        }
     }
 }
