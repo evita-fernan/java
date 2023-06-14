@@ -14,6 +14,7 @@
       <change afterPath="$PROJECT_DIR$/src/mascotaapp/MascotaAPP.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mascotaapp/entidades/Mascota.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mascotaapp/entidades/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mascotaapp/services/MascotaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
