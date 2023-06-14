@@ -93,6 +93,11 @@ public class Mascota {
         return raza;
     }
 
+    /**
+     *
+      * @param energiaRestar
+     * @return
+     */
     public int pasear(int energiaRestar) {
 
         energia -= energiaRestar;
@@ -101,6 +106,14 @@ public class Mascota {
     }
 
     //sobrecarga
+
+    /**
+     * Function to walk a pet indicating the number of laps
+     * @param energiaRestar
+     * @param vueltas
+     * @return
+     */
+
     public int pasear(int energiaRestar, int vueltas){
         for (int i = 0; i < vueltas; i++){
             energia-=energiaRestar;
